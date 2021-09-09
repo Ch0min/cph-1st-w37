@@ -46,11 +46,11 @@ void MethodTwo() {
   println("Thursday");
   } else if (weekDay == 4) {
   println("Friday");
+    // Print if it is weekend here:
   } else if (weekDay >= 5) {
   println("Weekend");
   }
   
-  // Print if it is weekend here:
 
 
 }

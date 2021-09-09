@@ -1,7 +1,7 @@
 // 3.a Draw a traffic light using colors stored in variables - one for each of the 4 colors (background is the 4th).
 color red = color(255, 0, 0);
 color green = color(0, 255, 0);
-color blue = color(0, 0, 255);
+color yellow = color(255, 255, 0);
 color grey = color (175);
 
 int w = 200;
@@ -16,8 +16,8 @@ void setup() {
   rectMode(CENTER);
   fill(0);
   rect(125, 350, 200, 600);
-  
-// 3.b add a gray color for the turned off effect
+
+  // 3.b add a gray color for the turned off effect
   ellipseMode(CENTER);
   fill(175);
   ellipse(width/2, height/2, w, y);
@@ -35,7 +35,7 @@ void draw() {
     ellipse(width/2, height/2-y, w, y);
     fill(grey);
     ellipse(width/2, height/2+y, w, y);
-
+    
   } else {
     fill(green);
     ellipse(width/2, height/2+y, w, y);
@@ -44,7 +44,7 @@ void draw() {
   }
 
   i++;
-  if (i == 100) {
+  if (i == 50) {
     i = 1;
   }
 }

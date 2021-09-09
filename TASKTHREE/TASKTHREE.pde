@@ -35,7 +35,6 @@ void draw() {
     ellipse(width/2, height/2-y, w, y);
     fill(grey);
     ellipse(width/2, height/2+y, w, y);
-    
   } else {
     fill(green);
     ellipse(width/2, height/2+y, w, y);
